@@ -1,0 +1,190 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    min-height: 100%;
+    min-width: 100%;
+  }
+  body {
+    overflow: hidden;
+    margin: 0;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.87);
+  }
+  /* header grid area */
+  #navbar {
+    display: grid;
+    grid-template-columns: 1fr 50px 50px 50px 50px;
+    grid-template-rows: 50px;
+    grid-template-areas: ". gmail images apps profile";
+    font-size: 13px;
+  }
+  #gmail {
+    grid-area: gmail;
+    justify-self: center;
+    align-self: center;
+  }
+  #images {
+    grid-area: images;
+    justify-self: center;
+    align-self: center;
+  }
+  #apps {
+    grid-area: apps;
+    justify-self: center;
+    align-self: center;
+    margin-right: -10px;
+  }
+  #profile {
+    grid-area: profile;
+    justify-self: center;
+    align-self: center;
+  }
+  #profile img {
+    border-radius: 50%;
+  }
+  /* logo and search bar area */
+  #middle {
+    padding-top: 137px;
+    text-align: center;
+  }
+  #search-bar {
+    width: 550px;
+    height: 34px;
+    border: 1px solid rgba(0, 0, 0, 0.151);
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 1px 1px 3px grey;
+  }
+  #search-bar:hover {
+    box-shadow: 1px 1px 7px grey;
+  }
+  
+  #buttons {
+    padding: 20px;
+    border: none;
+  }
+  #buttons #google-search {
+    margin: 10px;
+    border: none;
+    font-size: 15px;
+    color: #5f6368;
+    padding: 7px 15px 7px 15px;
+    border-radius: 3px;
+  }
+  #buttons #google-search:hover {
+    border: 1px solid rgba(0, 0, 0, 0.226);
+    cursor: pointer;
+  }
+  #buttons #random-search {
+    border: none;
+    font-size: 15px;
+    color: #5f6368;
+    padding: 7px 15px 7px 15px;
+    border-radius: 3px;
+  }
+  #buttons #random-search:hover {
+    border: 1px solid rgba(0, 0, 0, 0.226);
+    cursor: pointer;
+  }
+  #offered-languages {
+    font-size: small;
+  }
+  #offered-languages a {
+    color: blue;
+    margin: 3px;
+  }
+  /* footer grid area */
+  #footer {
+    display: grid;
+    grid-template-columns: 100px 70px 70px 140px 1fr 70px 70px 70px 150px;
+    grid-template-rows: 30px 50px;
+    grid-template-areas:
+      "nation . . . . . . . ."
+      "advertising business about info . privacy terms settings google-usage";
+    position: absolute;
+    bottom: 0;
+    min-width: 100%;
+    border: 1px solid #f2f2f2;
+    background-color: rgb(242, 242, 242);
+    margin-left: 0;
+    border: 1px solid rgba(128, 128, 128, 0.144);
+  }
+  #nation {
+    grid-area: nation;
+    justify-self: center;
+    align-self: center;
+    font-size: 15px;
+    color: #5f6368;
+  }
+  #business {
+    grid-area: business;
+    justify-self: center;
+    align-self: center;
+    font-size: 13px;
+    color: #5f6368;
+  }
+  #about {
+    grid-area: about;
+    justify-self: center;
+    align-self: center;
+    font-size: 13px;
+    color: #5f6368;
+  }
+  #info {
+    grid-area: info;
+    justify-self: center;
+    align-self: center;
+    font-size: 13px;
+    color: #5f6368;
+  }
+  #privacy {
+    grid-area: privacy;
+    justify-self: center;
+    align-self: center;
+    font-size: 13px;
+    color: #5f6368;
+  }
+  #terms {
+    grid-area: terms;
+    justify-self: center;
+    align-self: center;
+    font-size: 13px;
+    color: #5f6368;
+  }
+  #settings {
+    grid-area: settings;
+    justify-self: center;
+    align-self: center;
+    font-size: 13px;
+    color: #5f6368;
+  }
+  #google-usage {
+    grid-area: google-usage;
+    justify-self: center;
+    align-self: center;
+    font-size: 13px;
+    color: #5f6368;
+  }
+  #advertising {
+    grid-area: advertising;
+    justify-self: center;
+    align-self: center;
+    font-size: 13px;
+    color: #5f6368f8;
+    margin-left: 20px;
+  }
+  
+  /* Bugs/features left to finish:
+   - Searchbar addition of "magnifying glass icon" and inlining with the search bar as well as 
+   "voice search icon" addition with the same process.
+   - Clicking on searchbar creates a rectangular element, remove this. 
+   - Searchbar text is too far left. 
+   - Hovering over search buttons misaligns paragraph below and the other button respectively.
+   - Addition of line separating first and second row of footer.
+  */
+  

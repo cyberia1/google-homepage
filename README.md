@@ -1,1 +1,1 @@
-This is a project for an assignment for "The Odin Project", which asks for a reconstruction of the Google home page(just the fascade) or the more difficult version, which is a webpage that follows a seach prompt(again, no JS). This is a combination of two which simply has the icon for the "search" open a new link to a pre-determined page.  
+This is a project for an assignment for "The Odin Project", which asks for a reconstruction of the Google home page(just the fascade, no JS). 
